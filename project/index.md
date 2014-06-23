@@ -1,0 +1,53 @@
+---
+title       : Developing Data Products Course Project
+subtitle    : 
+author      : smhamam
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Introduction
+
+This presentation to describe the functionand uses of the Shiny application I developed 
+as course project at the following link:
+
+[https://smhamam.shinyapps.io/Proj/](https://smhamam.shinyapps.io/Proj/)
+
+--- 
+
+## Fuctionality
+
+The application allows the user to approximate using polynomial terms one of the follwing functions:
+
+* Sine
+* Cosine
+* Logarithm
+
+--- 
+
+## Functions
+
+
+```r
+curve(log(x), 0, 2*pi, col="red")
+curve(sin(x), add = TRUE, col = "blue")
+curve(cos(x), add = TRUE, col = "green")
+```
+
+![plot of chunk plotChunk](assets/fig/plotChunk.png) 
+
+--- 
+
+## Fitting
+<img class=center src=./assets/img/plot1.png height=500,width=500>
+
+--- 
+
+## Over Fitting
+When too many plynomial terms are used, the polynomial overfits the data resulting in a poor aproximation.
+<img class=center src=./assets/img/plot2.png height=500,width=500>
